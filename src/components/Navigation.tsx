@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import LogoImage from './logo3.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,13 +22,12 @@ const Navigation = () => {
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between  h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
             <div className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-              ERP Innovex
+          <img src={LogoImage} alt="ERP Innovex Logo" className="h-28 w-auto" />
+             <div  ERP Innovex />
             </div>
-          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
